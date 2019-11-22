@@ -21,7 +21,7 @@
       </b-collapse>
     </b-navbar>
 
-    <br><br><br>
+    <br>
 
     <!-- formulario -->
     <b-form inline>
@@ -42,12 +42,7 @@
       <b-button v-b-modal.modal-1 variant="primary">Save</b-button>
     </b-form>
 
-    <!-- modal -->
-    <b-modal id="modal-1" title="BootstrapVue">
-      <p class="my-4">Hello from modal!</p>
-    </b-modal>
-
-    <br><br><br>
+    <br>
 
     <!-- tabela -->
     <b-table-simple hover small caption-top responsive>
@@ -103,6 +98,13 @@
         </b-tr>
       </b-tfoot>
     </b-table-simple>
+
+    <br>
+
+    <!-- modal -->
+    <b-modal id="modal-1" title="BootstrapVue">
+      <p class="my-4">Hello from modal!</p>
+    </b-modal>
 
   </div>
 </template>
