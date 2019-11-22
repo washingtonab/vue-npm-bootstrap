@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- menu -->
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -12,9 +12,9 @@
           <b-nav-item href="#">Link 2</b-nav-item>
           <b-nav-item href="#">Link 3</b-nav-item>
 
-          <b-nav-item-dropdown text="User" right>
-            <b-dropdown-item href="#">Account</b-dropdown-item>
-            <b-dropdown-item href="#">Settings</b-dropdown-item>
+          <b-nav-item-dropdown text="Drop">
+            <b-dropdown-item href="#">Link 4</b-dropdown-item>
+            <b-dropdown-item href="#">Link 5</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
@@ -26,20 +26,16 @@
     <!-- formulario -->
     <b-form inline>
       <label class="sr-only" for="inline-form-input-name">Name</label>
-      <b-input
-        id="inline-form-input-name"
-        class="mb-2 mr-sm-2 mb-sm-0"
-        placeholder="Jane Doe"
-      ></b-input>
+      <b-input id="inline-form-input-name" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe">
+      </b-input>
 
       <label class="sr-only" for="inline-form-input-username">Username</label>
-      <b-input-group prepend="@" class="mb-2 mr-sm-2 mb-sm-0">
-        <b-input id="inline-form-input-username" placeholder="Username"></b-input>
-      </b-input-group>
+      <b-input id="inline-form-input-username" class="mb-2 mr-sm-2 mb-sm-0" placeholder="Username">
+      </b-input>
 
       <b-form-checkbox class="mb-2 mr-sm-2 mb-sm-0">Remember me</b-form-checkbox>
 
-      <b-button v-b-modal.modal-1 variant="primary">Save</b-button>
+      <b-button v-b-modal.modal-1 variant="info">Save</b-button>
     </b-form>
 
     <br>
